@@ -1,0 +1,229 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+
+<!-- mute the iframes, make buttons and htmls to input into the thingy to change the type of kahoots.		
+ -->
+	</head>
+	<body id=body>
+																			<style type="text/css">
+																				
+
+																				#word{
+																					
+																							position:absolute;
+																							left:36.5%;
+																							z-index: 102;
+																							width:30%;
+																							height:auto;
+																							animation: bounce;
+																							animation-duration: 3s ;
+																							animation-iteration-count: infinite;
+																				}
+																				@keyframes bounce{
+																					0%{
+																						top:47.5%;
+																					}
+																					/*10%{
+																						top:107.28%;
+																					}
+																					20%{
+																						top:106.4%;
+																					}
+																					30%
+																					{
+																						top:105.52%;
+																					}
+																					40%{
+																						top:103.98%;
+																					}*/
+
+																					40%{
+																						top:32%;
+																					}
+																					/*60%{
+																						top:103.98%;
+																					}
+																					70%
+																					{
+																						top:105.52%;
+																					}
+																					80%{
+																						top:106.4%;
+																					}*/
+
+																					100%{
+																						top:47.5%;
+																					}
+
+
+
+																				}
+																				#san{
+																					position: absolute;
+																					top:1500px;
+																					visibility: hidden;
+																				}
+																				#ewp{
+																					
+																					width: 49vw;
+																					height: 50vh;
+																					visibility: hidden;
+																					/*animation: change 5s infinite;
+																					border: 2px solid black;*/
+																				/*}
+																					@keyframes change{
+																						border: 3px solid black;*/}
+																				
+																				#Paper{
+																					position: absolute;
+																					width: 100vw;
+																					height: 50vh;
+																					top:51%;
+																					left:0%;
+																					visibility: hidden;
+
+																				}
+																				#pew{
+																					
+																					visibility: hidden;
+																					bottom:10px;
+																					width: 49vw;
+																					height: 50vh;
+																					border: 2px solid black;
+																				}
+																					
+
+
+																				
+																				#Hand{
+																					pointer-events: none;
+																					position: relative;
+																					right:-10px;
+																					bottom:0px;
+																					z-index: 101;
+																					overflow:hidden;	
+
+																				}
+																				#w{
+
+																					min-width:50px%; 
+																			
+																					position: relative;
+
+																					animation: change 30s infinite;
+																					}
+																				#q{
+																					animation: change 30s infinite;
+																					position: relative;
+																					bottom:158px;
+																					left:970px;
+																					visibility: hidden;
+																					}
+
+																				body{
+																					/*animation: change;*/
+
+																					min-width: 100%;
+																					background-color: #303030;
+																					animation-duration: 9s ;
+																					animation-iteration-count: infinite;
+																					overflow: hidden;
+
+
+																					
+
+																					}
+																					@keyframes ge{
+																					
+																						0%{background-color:red;}
+																						16.6%{background-color:orange; }
+																						33.3%{background-color:black; }
+																						49.9%{background-color: green;}
+																						66.5%{background-color: blue;}
+																						83.1%{background-color: indigo;}
+																						100.0%{background-color: black;}
+																					}
+																				}
+																			</style>
+
+	<iframe id=pew  src="https://play.kahoot.it/v2/gameblock?quizId=4f58490f-7517-4803-9b70-0bcbfc87da04">
+
+	</iframe>
+
+	<iframe  id=ewp   src="#"> Broadcasting Screen </iframe>
+	
+	<iframe id=Paper src="https://kahoot.it "> </iframe>
+
+	
+																				
+<!-- 	 <img width=150 id="Hand" src="https://static.thenounproject.com/png/35250-200.png" > --> 
+	 <H1></H1>  
+	<audio controls autoplay id=san>
+		<source src="Star Light Zone.mp3" type="audio/ogg">
+			<source src="Star Light Zone.mp3" type="audio/mp3">
+	</audio>
+	<img id=word src="C:\Users\froze\Desktop\Zoom Kahoot for poor internet\beBetter.png">
+
+	</html>
+
+	<script type="text/javascript">
+																				var start = document.getElementById("word");
+																				var start = document.getElementById("body");
+																				var san = document.getElementById("san");
+																				var zzz = document.getElementById("ewp");
+																				var z = document.getElementById("pew");
+																				var zz = document.getElementById("Paper");
+																					start.addEventListener("click", begIn);
+
+
+																						function begIn(w)
+																						{
+																						zzz.style.visibility = "visible";
+																						zz.style.visibility = "visible";
+																						z.style.visibility = "visible";
+																						z.muted=true;
+																						zzz.muted=true;
+																						zz.muted=true;
+																						console.log(w);
+																						san.play(true);
+																						san.loop = true;
+																						document.getElementById("word").style.visibility = "hidden";
+																						}
+																						
+																				
+
+																				
+																				// Kahoot play button
+																											console.log(document.getElementsByClassName("button__Button-c6mvr2-0 bRMKLw"));
+																				// var hand=document.getElementById("hand");
+																												// Floaty hand
+																											Page.addEventListener('mousewheel', function(a){
+																													// var formuoli = a.timeStamp + -5166.8;
+																													// document.getElementById("Hand")
+																													// Find a better value for than the time stam and make the varible reset every time it  
+																													console.log(a);
+																											});
+																											window.addEventListener('mousemove', function (q)
+																														{
+																							document.getElementById("Hand").style.left = (q.clientX + -1650) + 'px';
+																							document.getElementById("Hand").style.top = (q.clientY+ -850 ) +'px';
+																														}
+																													);
+																			</script>
+
+	</body>
+
+	
+
+	<!-- https://play.kahoot.it/v2/gameblock?quizId=4f58490f-7517-4803-9b70-0bcbfc87da04" -->
+	<!-- https://kahoot.it -->
+	<!-- class="button__Button-c6mvr2-0 bRMKLw" -->
+
+<!-- 	let hand = document.getElementById('o');
+		const onMouseMove = (q) =>{
+		hand.style.left = q.pageX + 'px';
+		hand.style.top = q.pageY + 'px';
+			}
+		document.addEventListener('mousemove', onMouseMove); -->
+
